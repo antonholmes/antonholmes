@@ -14,7 +14,7 @@ I wanted to build my own boilerplate code so I built one from scratch.
 
 # :building_construction: Built With
 
-For the back-end, Multiplayr :tm: was built using the following:
+For the back-end, the web app was built using the following:
 
 - :book: Language: JavaScript
 - :running: Runtime Environment: Node.js - Express.js
