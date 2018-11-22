@@ -116,3 +116,86 @@ const roseCardHeader = {
   background: 'linear-gradient(60deg, #ec407a, #d81b60)',
   ...roseBoxShadow,
 };
+const cardActions = {
+  margin: '0 20px 10px',
+  paddingTop: '10px',
+  borderTop: '1px solid #eeeeee',
+  height: 'auto',
+  ...defaultFont,
+};
+
+const cardHeader = {
+  margin: '-30px 15px 0',
+  borderRadius: '3px',
+  padding: '15px',
+};
+
+const defaultBoxShadow = {
+  border: '0',
+  borderRadius: '3px',
+  boxShadow:
+    '0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
+  padding: '10px 0',
+  transition: 'all 150ms ease 0s',
+};
+
+const title = {
+  color: '#3C4858',
+  margin: '1.75rem 0 0.0875rem',
+  textDecoration: 'none',
+  fontWeight: '700',
+  fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+};
+
+const cardTitle = {
+  ...title,
+  marginTop: '.625rem',
+};
+
+const cardLink = {
+  '& + $cardLink': {
+    marginLeft: '1.25rem',
+  },
+};
+
+const cardSubtitle = {
+  marginBottom: '0',
+  marginTop: '-.375rem',
+};
+
+export {
+  // variables
+  drawerWidth,
+  transition,
+  container,
+  containerFluid,
+  boxShadow,
+  card,
+  defaultFont,
+  primaryColor,
+  warningColor,
+  dangerColor,
+  successColor,
+  infoColor,
+  roseColor,
+  grayColor,
+  primaryBoxShadow,
+  infoBoxShadow,
+  successBoxShadow,
+  warningBoxShadow,
+  dangerBoxShadow,
+  roseBoxShadow,
+  warningCardHeader,
+  successCardHeader,
+  dangerCardHeader,
+  infoCardHeader,
+  primaryCardHeader,
+  roseCardHeader,
+  cardActions,
+  cardHeader,
+  defaultBoxShadow,
+  title,
+  cardTitle,
+  cardLink,
+  cardSubtitle,
+};
