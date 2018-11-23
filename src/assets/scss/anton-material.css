@@ -212,3 +212,66 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-origin {
 .noUi-state-drag * {
   cursor: inherit !important;
 }
+/* Slider size and hdnle placement */
+.noUi-horizontal {
+  height: 2px;
+  margin: 15px 0;
+}
+
+.noUi-horizontal .noUi-handle {
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  left: -10px;
+  top: -6px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+  border: 1px solid #9c27b0;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+noUi-vertical {
+  width: 2px;
+  margin: 0 15px;
+  height: 100%;
+}
+
+noUi-vertical .noUi-handle {
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  left: -6px;
+  top: -10px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+  border: 1px solid #9c27b0;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
+  right: -4px;
+  left: auto;
+}
+
+/* Styling - giving the connect element a border radius can cause issues with using transform scale */
+.noUi-target {
+  background-color: #c8c8c8;
+  border-radius: 3px;
+}
+
+.noUi-connects {
+  border-radius: 3px;
+}
+
+.noUi-connect {
+  background: #888;
+  border-radius: 3px;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
